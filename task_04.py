@@ -23,3 +23,7 @@ text = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
 to_find = "qwe"
 
 print(f"список: {text}, ищем: '{to_find}', ответ: {look_up_second_pos(text,to_find)}")
+
+# 2
+def second_coming(lst:list, num: int):
+    return [i for i, element in enumerate(lst) if num in element][1] if len(lst) >= 2 else 0

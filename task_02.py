@@ -8,3 +8,11 @@ def sum_odd_index(list_of_num : list):
 
 list_of_num = [1,2,3,4,5,6,7,8,9]
 print(f"sum of nums with odd index in {list_of_num} => {sum_odd_index(list_of_num)} ")
+
+# Вариант 2
+
+from functools import reduce
+def sum_list(n):
+    nums = list(range(1, n+1))
+    return reduce(lambda a, b: a+b, nums[1::2])
+print(sum_list(9))

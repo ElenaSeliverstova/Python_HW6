@@ -8,3 +8,8 @@ def multi_pairs(list_num):
 list_num = [1,2,3,4,5,6]
 
 print(f"{list_num} - > {multi_pairs(list_num)}")
+
+# 2
+
+def mult_list(nums):
+    return[nums[i] * nums[-i-1] for i in range(math.ceil(len(nums)/2))]

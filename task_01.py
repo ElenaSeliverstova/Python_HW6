@@ -7,3 +7,11 @@ def find_number(list_of_text: str, number: str):
 text = "bla bla 222 bla"
 number = "22"
 print(f"{number} in text : '{text}' - > is {find_number(text, number)}")
+
+
+# Вариант 2
+lst = ['мама', 'сшила', 'м0не', 'штаны', 'и7з', 'берез9овой', 'кор45ы', '893.']
+def is_num(lst, number):
+    return list(filter(lambda element: str(number) in element, lst))
+#    return any(filter(lambda element: str(number) in element, lst))
+print(is_num(lst, 0))

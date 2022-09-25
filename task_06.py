@@ -9,3 +9,10 @@ def list_N(number_N):
 
 number_N=5
 print(f"For N = {number_N} -> {list_N(number_N)}")
+
+# 2
+def get_sequence(n):
+    return[-3**i for i in range(1, n+1)]
+
+get_seq= lambda n: [-3**i for i in range(1, n+1)]
+
